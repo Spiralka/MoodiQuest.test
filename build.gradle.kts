@@ -16,10 +16,15 @@ repositories {
 }
 
 dependencies {
+    implementation("io.rest-assured:rest-assured:5.4.0")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.2")
+
     testImplementation(platform("org.junit:junit-bom:5.10.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    testImplementation("io.rest-assured:rest-assured:5.4.0")
     testImplementation("org.assertj:assertj-core:3.26.3")
+    testImplementation("io.qameta.allure:allure-junit5:2.29.0")
+    implementation("io.qameta.allure:allure-rest-assured:2.29.0")
+
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
