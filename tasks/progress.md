@@ -22,3 +22,6 @@
 
 ## Next step
 - Test 1: GET /quests/random
+
+## Refactoring notes
+- Refactored test to layered architecture with Steps abstraction
